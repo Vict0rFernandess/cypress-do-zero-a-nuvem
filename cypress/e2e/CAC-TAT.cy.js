@@ -121,7 +121,7 @@
 
     })
 
-    it.only('marca o tipo de atendimento "Feedback"', () =>{
+    it('marca o tipo de atendimento "Feedback"', () =>{
       cy.get('input[type="radio"][value="feedback"]')
       .check()
       .should('be.checked')
